@@ -52,3 +52,20 @@ v → w é back edge  ⟺  w foi visitado  AND  post(w) ainda não definido
 **Complexidade:** O(V + E), onde V é o número de módulos e E é o número de dependências.
 
 ---
+
+## Estrutura do projeto
+
+```
+pydep-cycle/
+├── main.py        # Orquestra a análise e exibe o resultado
+├── parser.py      # Lê arquivos .py e extrai imports com o módulo ast
+├── graph.py       # Grafo dirigido como lista de adjacência
+├── dfs.py         # DFS Numbering com pre/post e detecção de back edges
+└── exemplo/       # Projeto fictício com ciclos para teste
+    ├── modulo_a.py
+    ├── modulo_b.py
+    ├── modulo_c.py
+    └── utils.py
+```
+
+---
