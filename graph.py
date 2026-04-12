@@ -47,3 +47,17 @@ class GrafoDirigido:
             linhas.append(f"  {u!r} → {vizinhos}")
         linhas.append("}")
         return "\n".join(linhas)
+
+def construir_grafo(deps: dict[str, list[str]]) -> "GrafoDirigido":
+    g = GrafoDirigido()
+
+    # Garante que todos os módulos existam como nós, mesmo os sem deps
+    for modulo in deps:
+        g.adicionar_no(modulo)
+
+    # Adiciona arestas dirigidas módulo → dependência
+    for modulo, dependencias in deps.items():
+        for dep in dependencias:
+            g.adicionar_aresta(modulo, dep)
+
+    return g
