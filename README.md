@@ -1,5 +1,7 @@
 # Detector de Dependências Circulares em Python
 
+**Apresentação:** https://www.youtube.com/watch?v=11ndWVb6234
+
 Ferramenta de linha de comando que analisa projetos Python, constrói um grafo de dependências entre módulos e detecta ciclos usando uma busca em profundidade com registro de timestamps de descoberta e finalização.
 
 ---
