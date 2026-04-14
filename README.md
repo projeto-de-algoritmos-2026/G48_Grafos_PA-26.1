@@ -1,12 +1,19 @@
 # Detector de Dependências Circulares em Python
 
+Número da Lista: 48<br>
+Conteúdo da Disciplina: Grafos<br>
+
+## Alunos
+|Matrícula | Aluno |
+| -- | -- |
+| 23/1034082  |  ARTUR HANDOW KRAUSPENHAR |
+| 21/1031593  |  ANDRE LOPES DE SOUSA |
+
 **Apresentação:** https://www.youtube.com/watch?v=11ndWVb6234
 
+## Sobre 
+
 Ferramenta de linha de comando que analisa projetos Python, constrói um grafo de dependências entre módulos e detecta ciclos usando uma busca em profundidade com registro de timestamps de descoberta e finalização.
-
----
-
-## Problema
 
 Em projetos Python com múltiplos módulos, dependências circulares é um problema silencioso:
 
@@ -74,16 +81,17 @@ pydep-cycle/
 
 ---
 
-## Como usar
+## Instalação
 
-**Pré-requisitos:** Python 3.8+ — nenhuma dependência externa.
+Linguagem: Python 3.8+<br>
+Framework: Sem Framework<br>
 
 ```bash
 # Analisar um projeto
 python main.py /caminho/para/seu/projeto
 
 # Testar com o exemplo incluído
-python main.py ./exemplo
+python main.py ./exemplo_com_2_ciclos
 ```
 
 **Saída esperada (no exemplo):**
